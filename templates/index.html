@@ -1,0 +1,56 @@
+{% extends "partials/base.html" %}
+{% set active_page = "index" %}
+
+{% block content %}
+<section class="hero">
+    <header class="h-100 d-flex align-items-center justify-content-center">
+        <h1 class="text-white">Fit Foods</h1>
+    </header>
+</section>
+<section>
+    <div class="container">
+        <header class="my-4">
+            <h2 class="text-center">Featured dishes</h2>
+        </header>
+        <div class="row g-4">
+            <div class="col-lg-3 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../static/images/home/jude-infantini-rYOqbTcGp1c-unsplash.jpg"
+                         style="object-fit: cover; height: 200px;"
+                         alt="Featured dish">
+
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../static/images/home/danijela-prijovic-qits91IZv1o-unsplash.jpg"
+                         style="object-fit: cover; height: 200px;"
+                         alt="Featured dish">
+
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../static/images/home/ella-olsson-fxJTl_gDh28-unsplash.jpg"
+                         style="object-fit: cover; height: 200px;"
+                         alt="Featured dish">
+
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex justify-content-center">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../static/images/home/anna-pelzer-IGfIGP5ONV0-unsplash.jpg"
+                         style="object-fit: cover; height: 200px;"
+                         alt="Featured dish">
+
+                    <a href="#" class="stretched-link"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+

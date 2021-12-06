@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+}
+
+.hero {
+    background-blend-mode: multiply;
+    background: rgba(0, 0, 0, .3) url("../images/home/lily-banse--YHSwy6uqvk-unsplash.jpg") center / cover no-repeat;
+    height: 55vh;
+}
+
+.card-hover {
+    transition: box-shadow 250ms, border 50ms;
+}
+
+.card-hover:hover {
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}

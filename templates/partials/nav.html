@@ -1,0 +1,19 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="{{ url_for('index')}}">Fit Foods</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsableNav"
+                aria-controls="collapsableNav" aria-expanded="false" aria-label="Toggle nav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsableNav">
+            <div class="navbar-nav mx-auto">
+                <a class="nav-item nav-link {{'active' if active_page == 'index'}}"
+                   href="{{ url_for('index')}}">Home</a>
+                <a class="nav-item nav-link {{'active' if active_page == 'categories'}}"
+                   href="{{ url_for('show_categories')}}">Categories</a>
+                <a class="nav-item nav-link {{'active' if active_page == 'recipes'}}"
+                   href="{{ url_for('show_recipes')}}">Recipes</a>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,38 @@
+{% extends "partials/base.html" %}
+{% set active_page = "recipes" %}
+
+{% block content %}
+<div class="container d-flex flex-column align-items-center">
+    <section style="width: 75vw" class="mb-3">
+        <header>
+            <h1>Vegan Pizza</h1>
+            <p class="text-muted">Source</p>
+            <img class="w-100" src="../static/images/sheri-silver-A4EtgLN1_Fw-unsplash.jpg"
+                 style="object-fit: cover; height: 400px;"
+                 alt="Recipe Image">
+        </header>
+    </section>
+    <section class="p-0" style="width: 75vw">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h2>Instructions</h2>
+                <ol>
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
