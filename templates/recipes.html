@@ -2,37 +2,85 @@
 {% set active_page = "recipes" %}
 
 {% block content %}
-<div class="container d-flex flex-column align-items-center">
-    <section style="width: 75vw" class="mb-3">
-        <header>
-            <h1>Vegan Pizza</h1>
-            <p class="text-muted">Source</p>
-            <img class="w-100" src="../static/images/sheri-silver-A4EtgLN1_Fw-unsplash.jpg"
-                 style="object-fit: cover; height: 400px;"
-                 alt="Recipe Image">
-        </header>
-    </section>
-    <section class="p-0" style="width: 75vw">
+<section>
+    <header class="m-4 text-center">
+        <h1>Recipes</h1>
+    </header>
+    <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <h2>Ingredients</h2>
-                <ul>
-                    <li>A</li>
-                    <li>B</li>
-                    <li>C</li>
-                    <li>D</li>
-                </ul>
+            <div class="col-md-12">
+                <div class="dropdown text-center mb-4">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="categoryDropdown"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                        Categories
+                    </button>
+                    <ul id="dropdown-item" class="dropdown-menu" aria-labelledby="categoryDropdown">
+                        {% for category in categories %}
+                        <li>
+                            <button type="button" data-category="{{category.name}}" class="dropdown-item">
+                                {{category.title}}
+                            </button>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
-            <div class="col-md-6">
-                <h2>Instructions</h2>
-                <ol>
-                    <li>A</li>
-                    <li>B</li>
-                    <li>C</li>
-                    <li>D</li>
-                </ol>
+            {% for recipe in recipes %}
+            <div class="col-md-3 d-flex align-items-stretch {{ 'd-none' if category and not recipe.category == category}}">
+                <div class="card mx-auto" data-category="{{ recipe.category }}">
+                    <div class="row no-gutters">
+                        <div class="col-3 col-md-12">
+                            <img class="card-img-top img-fluid"
+                                 src="{{ url_for('static',filename=recipe.thumbnail) }}"
+                                 style="object-fit: cover; height: 200px;"
+                                 alt="{{ recipe.title }}">
+                        </div>
+                        <div class="col-3 col-md-12">
+                            <div class="card-body">
+                                <h2 class="card-title">{{ recipe.title }}</h2>
+                                <p class="card-text">{{ recipe.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="{{ url_for('show_recipe', recipe_id=recipe.id) }}" class="stretched-link"></a>
+                </div>
             </div>
+            {% endfor %}
+            <p id="no-recipes-msg" class="text-center lead invisible"></p>
         </div>
-    </section>
-</div>
+    </div>
+</section>
+
+<script>
+    const recipes = document.querySelectorAll(".card");
+    const noRecipeMsg = document.querySelector("#no-recipes-msg")
+
+    let category = "{{ category or '' }}";
+
+    function updateMsg() {
+        if (category && [...recipes].filter(r => r.dataset.category === category).length === 0) {
+            noRecipeMsg.innerHTML = `No recipes found for the "${category}" category.`
+            noRecipeMsg.classList.remove("invisible")
+        } else {
+            noRecipeMsg.classList.add("invisible")
+        }
+    }
+
+    updateMsg()
+
+    const dropdown = document.getElementById("dropdown-item");
+    dropdown.addEventListener("click", e => {
+        const targetCategory = e.target.dataset.category;
+        if (!targetCategory) return;
+        category = targetCategory
+        recipes.forEach(recipe => {
+            if (recipe.dataset.category !== targetCategory) {
+                recipe.parentElement.classList.add("d-none");
+            } else {
+                recipe.parentElement.classList.remove("d-none");
+            }
+        });
+        updateMsg()
+    });
+</script>
 {% endblock %}

@@ -1,0 +1,126 @@
+{
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Rye Bread",
+      "description": "Bread made with rye flour",
+      "category": "snacks",
+      "source": "https://example.com",
+      "thumbnail": "/images/recipes/jude-infantini-rYOqbTcGp1c-unsplash.jpg",
+      "banner": "/images/recipes/jude-infantini-rYOqbTcGp1c-unsplash.jpg",
+      "ingredients": [
+        "Lorem ipsum dolor sit amet",
+        "Aliquam tincidunt",
+        "Vestibulum auctor",
+        "Nunc dignissim risus",
+        "Cras ornare tristique"
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, lobortis posidonium disputationi ei mel, molestie voluptua postulant ei duo.",
+        "Timeam oporteat repudiandae ea pri, oporteat perfecto antiopam ne eum, enim detracto placerat duo in. Ea mea stet nostrum molestiae. Id invidunt sadipscing cum, virtute.",
+        "Justo qualisque sed ad. Pri ex summo putant evertitur, ad vel tale albucius, erat."
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Tomato Soup",
+      "description": "Creamy, rustic, tomato soup",
+      "category": "soups",
+      "source": "https://www.allrecipes.com/recipe/39544/garden-fresh-tomato-soup/",
+      "thumbnail": "/images/recipes/ella-olsson-fxJTl_gDh28-unsplash.jpg",
+      "banner": "/images/recipes/ella-olsson-fxJTl_gDh28-unsplash.jpg",
+      "ingredients": [
+        "Lorem ipsum dolor sit amet",
+        "Aliquam tincidunt",
+        "Vestibulum auctor",
+        "Nunc dignissim risus",
+        "Cras ornare tristique"
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, lobortis posidonium disputationi ei mel, molestie voluptua postulant ei duo.",
+        "Timeam oporteat repudiandae ea pri, oporteat perfecto antiopam ne eum, enim detracto placerat duo in. Ea mea stet nostrum molestiae. Id invidunt sadipscing cum, virtute.",
+        "Justo qualisque sed ad. Pri ex summo putant evertitur, ad vel tale albucius, erat."
+      ]
+    },
+    {
+      "id": "3",
+      "title": "Spaghetti",
+      "description": "Spaghetti with tomato and parmesan sauce",
+      "category": "meals",
+      "source": "https://example.com",
+      "thumbnail": "/images/recipes/danijela-prijovic-qits91IZv1o-unsplash.jpg",
+      "banner": "/images/recipes/danijela-prijovic-qits91IZv1o-unsplash.jpg",
+      "ingredients": [
+        "Lorem ipsum dolor sit amet",
+        "Aliquam tincidunt",
+        "Vestibulum auctor",
+        "Nunc dignissim risus",
+        "Cras ornare tristique"
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, lobortis posidonium disputationi ei mel, molestie voluptua postulant ei duo.",
+        "Timeam oporteat repudiandae ea pri, oporteat perfecto antiopam ne eum, enim detracto placerat duo in. Ea mea stet nostrum molestiae. Id invidunt sadipscing cum, virtute.",
+        "Justo qualisque sed ad. Pri ex summo putant evertitur, ad vel tale albucius, erat."
+      ]
+    },
+    {
+      "id": "4",
+      "title": "Salad",
+      "description": "A healthy salad with crispy lettuce, fresh tomatoes, and more!",
+      "category": "lunch",
+      "source": "https://example.com",
+      "thumbnail": "/images/recipes/anna-pelzer-IGfIGP5ONV0-unsplash.jpg",
+      "banner": "/images/recipes/anna-pelzer-IGfIGP5ONV0-unsplash.jpg",
+      "ingredients": [
+        "Lorem ipsum dolor sit amet",
+        "Aliquam tincidunt",
+        "Vestibulum auctor",
+        "Nunc dignissim risus",
+        "Cras ornare tristique"
+      ],
+      "instructions": [
+        "Lorem ipsum dolor sit amet, lobortis posidonium disputationi ei mel, molestie voluptua postulant ei duo.",
+        "Timeam oporteat repudiandae ea pri, oporteat perfecto antiopam ne eum, enim detracto placerat duo in. Ea mea stet nostrum molestiae. Id invidunt sadipscing cum, virtute.",
+        "Justo qualisque sed ad. Pri ex summo putant evertitur, ad vel tale albucius, erat."
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "name": "soups",
+      "title": "Soups",
+      "description": "Hardy, healthy soups",
+      "image": "/images/categories/max-griss-cToNEm70cvE-unsplash.jpg"
+    },
+    {
+      "name": "snacks",
+      "title": "Quick Snacks",
+      "description": "Fast made food",
+      "image": "/images/categories/isabella-mendes-3UUu_WDdOXw-unsplash.jpg"
+    },
+    {
+      "name": "meals",
+      "title": "Full Meals",
+      "description": "Filling, well-balanced, full meals",
+      "image": "/images/categories/edward-howell-vvUy1hWVYEA-unsplash.jpg"
+    },
+    {
+      "name": "desserts",
+      "title": "Desserts",
+      "description": "Mindful sweets",
+      "image": "/images/categories/kobby-mendez-idTwDKt2j2o-unsplash.jpg"
+    },
+    {
+      "name": "breakfast",
+      "title": "Breakfast",
+      "description": "Healthy morning meals",
+      "image": "/images/categories/eiliv-sonas-aceron-uAm1CZMdPCw-unsplash.jpg"
+    },
+    {
+      "name": "lunch",
+      "title": "Lunch",
+      "description": "Mid-day nutrition",
+      "image": "/images/categories/natalia-y-ljVSRqHCP2U-unsplash.jpg"
+    }
+  ]
+}
